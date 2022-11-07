@@ -5,7 +5,7 @@ Welcome to my C# ATM program!  The reason why I did this was to practice using t
 Like I mentioned above, the purpose of this project was to practice C#.  With an ATM program, I had to use loops for user validation and to loop through lists, use lists to store or update values based off of a persons account.  I also used a switch case to help direct the program to where it needed to go to do the proper transactions.  The program does only a few simple tasks.  Those tasks include, View the accounts current amount, depositing money into the account, withdrawling money out of the account, Viewing the past five transactions, and seeing a Bank Report.
 
 
-[ATM Demo Video](http://youtube.link.goes.here)
+[ATM Demo Video](http://youtu.be/c4HclljAgIk?hd=1)
 
 # Development Environment
 

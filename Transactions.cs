@@ -9,7 +9,6 @@ class Transactions
     **************************************************/
     public void displayAccountAmount(List<Account> accounts, int accountLocation)
     {
-        // accounts = accountList.getAccountList();
         Console.WriteLine("Your Amount is: $" + accounts[accountLocation].accountAmount);
     }
 
@@ -19,7 +18,6 @@ class Transactions
     **************************************************/
     public void withdrawlAmount(List<Account> accounts, int accountLocation)
     {
-        // accounts = accountList.getAccountList();
         bool valid = false;
 
         while(!valid)
@@ -44,7 +42,6 @@ class Transactions
     **************************************************/
         public void depositAmount(List<Account> accounts, int accountLocation)
     {
-        // accounts = accountList.getAccountList();
         bool valid = false;
 
         while(!valid)
@@ -71,7 +68,6 @@ class Transactions
     **************************************************/
     public void getRecentTrasactions(List<Account> accounts, int accountLocation)
     {
-        // accounts = accountList.getAccountList();
         int num = 1;
         for (var i = accounts[accountLocation].Transactions.Count - 1; num != 6 && i >= 0; i--) 
         {
@@ -87,7 +83,6 @@ class Transactions
     **************************************************/
         public void getReport(List<Account> accounts, int accountLocation)
     {
-        // accounts = accountList.getAccountList();
         Console.WriteLine("***BANK REPORT***");
         Console.WriteLine("Your Amount is: " + accounts[accountLocation].accountAmount);
         getRecentTrasactions(accounts, accountLocation);
