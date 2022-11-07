@@ -18,7 +18,7 @@ class AccountList
 
     {
         //Set up Fake Transaction Amounts
-        List<double> transactionsOne = new List<double>() {200.00, -25.00, 500.00, 1.00, -1000.00, 30000000.0};
+        List<double> transactionsOne = new List<double>() {200.00, -25.00, 500.00, 1.00, -1000.00, 3000.0};
         //List<double> transactionsOne = new List<double>() {200.00};
         List<double> transactionsTwo = new List<double>() {33.50, -10.00};
         List<double> transactionsThree = new List<double>() {100.00, 300.00, -5.00};
