@@ -34,6 +34,7 @@ bool isValidAccount(string accountNum, string accountPin)
  
   Console.Write("Invalid Account Number or Password.  Please Try Again.");
 
+
   return false;
 }
 
@@ -43,6 +44,8 @@ bool isValidAccount(string accountNum, string accountPin)
 **************************************************/
 public void getUserInput() 
 {
+  Console.WriteLine("********REXBURG COMMUNITY BANK********");
+  Console.WriteLine("Welcome to Rexburg Community Bank!  Please Login.");
   bool done = false;
   //Loop Through the ATM until the transaction is complete
   while(!done)
@@ -60,7 +63,6 @@ public void getUserInput()
 
       if(isAccountValid)
       {
-        Console.WriteLine("ACCOUNT TRUE");
         //Access the Account
         accessAccount(accountNum);
         done = true;
@@ -85,7 +87,6 @@ public void getUserInput()
 void accessAccount(string accountNum)
 {
   accountLocation = accountList.getAccountLocation(accountNum);
-  Console.WriteLine("ACCOUNT LOCATION: " + accountLocation);
 }
 
 

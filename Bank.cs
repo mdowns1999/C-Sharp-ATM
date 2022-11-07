@@ -22,12 +22,16 @@ class Bank
 **************************************************/
    public void chooseTransaction(int accountLocation, AccountList accountList)
    {
+    accounts = accountList.getAccountList();
+
+
     bool done = false;
     while(!done)
     {
     //Display the User's Options
     Console.WriteLine();
-    Console.WriteLine("Please Choose what Transaction you would like to do: Enter a number between 1 to 3.");
+    Console.WriteLine("Welcome, " + accounts[accountLocation].fName + " " + accounts[accountLocation].lName + ".");
+    Console.WriteLine("Please Choose what Transaction you would like to do: Enter a number between 1 to 5..  Press 6 to Exit");
     Console.WriteLine("1) Show Account Amount");
     Console.WriteLine("2) Deposit Cash");
     Console.WriteLine("3) Withdraw Cash");
@@ -42,23 +46,23 @@ class Bank
     switch(transactionSelection)
     {
         case "1":
-            transaction.displayAccountAmount(accounts, accountLocation, accountList);
+            transaction.displayAccountAmount(accounts, accountLocation);
         break;
 
         case "2":
-            transaction.depositAmount(accounts, accountLocation, accountList);
+            transaction.depositAmount(accounts, accountLocation);
         break;
 
         case "3":
-            transaction.withdrawlAmount(accounts, accountLocation, accountList);
+            transaction.withdrawlAmount(accounts, accountLocation);
         break;
 
         case "4":
-        transaction.getRecentTrasactions(accounts, accountLocation, accountList);
+        transaction.getRecentTrasactions(accounts, accountLocation);
         break;
 
         case "5":
-        transaction.getReport(accounts, accountLocation, accountList);
+        transaction.getReport(accounts, accountLocation);
         break;
                 
         case "6":
