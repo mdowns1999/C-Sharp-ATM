@@ -4,6 +4,8 @@
 * The user will enter his or her account info and
 * the class will then validate it.
 ************************************************************/
+
+//NOTE TO RUN IN TERMINAL, USE: dotnet run
 class ATM
 {
   //Variables
